@@ -123,7 +123,7 @@ def preprocessingfun(dtatSet):
     minutes = pd.to_numeric(minutes, downcast="float")
     x["time_taken"] = minutes
     
-    # Encoding dtatSet
+    # Encoding dataSet
     x_obj = x.select_dtypes(include=["object"])
     x_non_obj = x.select_dtypes(exclude=["object"])
     la = LabelEncoder()
@@ -229,7 +229,7 @@ def preprocessingfunTest(dtatSet,columnstest):
     minutes = pd.to_numeric(minutes, downcast="float")
     x["time_taken"] = minutes
     
-    # Encoding dtatSet
+    # Encoding dataSet
     x_obj = x.select_dtypes(include=["object"])
     x_non_obj = x.select_dtypes(exclude=["object"])
     la = LabelEncoder()
